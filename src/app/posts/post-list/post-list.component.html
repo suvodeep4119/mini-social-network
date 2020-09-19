@@ -1,0 +1,11 @@
+<h1 class="text-center m-3 p-3 text-black-50">Posts</h1>
+<div class="container-fluid" *ngIf='posts.length > 0'>
+  <div class="card" style="width: auto;" *ngFor='let i of posts'>
+    <div class="card-body">
+      <h5 class="card-title">{{ i.title}}</h5>
+      <p class="card-text">{{ i.content }}
+      </p>
+    </div>
+  </div>
+</div>
+<h3 class="text-center text-monospace text-black text-muted" *ngIf='posts.length <= 0'>No posts to show !</h3>
